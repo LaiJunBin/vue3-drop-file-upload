@@ -88,14 +88,14 @@ const onUpload = (files: FileList) => {
 <template>
   <TheDropFileUpload
     @upload="onUpload"
-    class="dfu-w-96 dfu-h-96 dfu-border dfu-border-solid dfu-border-gray-200 dfu-mx-auto dfu-mt-4 dfu-flex dfu-items-center dfu-justify-center"
+    class="w-96 h-96 border border-solid border-gray-200 mx-auto mt-4 flex items-center justify-center"
     ref="dropFileUpload"
   >
     <template #text>
       <div>Drop file(s) here</div>
-      <small class="dfu-text-sm">OR</small>
+      <small class="text-sm">OR</small>
       <div
-        class="dfu-relative dfu-mt-1 dfu-border dfu-border-solid dfu-border-gray-500 dfu-rounded-xl dfu-z-50 dfu-cursor-pointer dfu-select-none"
+        class="relative mt-1 border border-solid border-gray-500 rounded-xl z-50 cursor-pointer select-none"
         @click="dropFileUpload?.selectFile"
       >
         Select file(s)
