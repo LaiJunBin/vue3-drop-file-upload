@@ -49,12 +49,19 @@ const selectFile = () => {
   fileInput.value?.click();
 };
 
+const clearFile = () => {
+  if (fileInput.value) {
+    fileInput.value.value = "";
+  }
+};
+
 const upload = (files: FileList) => {
   $emit("upload", files);
 };
 
 defineExpose({
   selectFile,
+  clearFile,
 });
 </script>
 

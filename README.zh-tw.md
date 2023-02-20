@@ -59,6 +59,7 @@ const onUpload = (files: FileList) => {
 名稱       | 描述   |
 ----------------|----------|
 selectFile       | 呼叫原生的選擇檔案視窗，選取後一樣會觸發 upload 事件 |
+clearFile        | 清除 file input 的 value
 
 ## 客製化內容 (slot)
 名稱  |  描述  |

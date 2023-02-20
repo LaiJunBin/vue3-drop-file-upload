@@ -58,6 +58,7 @@ Event | Function | upload(files: FileList)    | When the file change will trigge
 Name       | Description   |
 ----------------|----------|
 selectFile       | Call the native select file window, which still dispatches an upload event when a file is changed. |
+clearFile        | Clear value of the file input.
 
 ## Customize Content (slot)
 Name  |  Description  |
