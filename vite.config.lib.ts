@@ -14,7 +14,9 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
     }),
-    cssInjectedByJsPlugin(),
+    cssInjectedByJsPlugin({
+      useStrictCSP: true,
+    }),
   ],
   resolve: {
     alias: {

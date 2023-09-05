@@ -106,3 +106,14 @@ const onUpload = (files: FileList) => {
   </TheDropFileUpload>
 </template>
 ```
+
+---
+
+## 樣式 CSP(Content Security Policy) 說明
+如果你的網站有設定 CSP，你需要加入以下的設定：
+
+```html
+    <meta property="csp-nonce" content="<your-nonce>" />
+```
+
+之後自動注入的 style 標籤會加入 `nonce` 屬性。
