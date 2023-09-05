@@ -16,10 +16,11 @@
   "exports": {
     ".": {
       "import": "./dist/drop-file-upload.mjs",
-      "require": "./dist/drop-file-upload.umd.js"
+      "require": "./dist/drop-file-upload.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "scripts": {
     "dev": "vite",
